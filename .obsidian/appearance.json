@@ -1,0 +1,15 @@
+{
+  "theme": "moonstone",
+  "interfaceFontFamily": "JetBrains Mono,Cambria Math",
+  "baseFontSize": 16,
+  "baseFontSizeAction": true,
+  "cssTheme": "",
+  "accentColor": "",
+  "enabledCssSnippets": [
+    "Custom CSS 2"
+  ],
+  "nativeMenus": false,
+  "showRibbon": true,
+  "showViewHeader": true,
+  "textFontFamily": "JetBrains Mono"
+}

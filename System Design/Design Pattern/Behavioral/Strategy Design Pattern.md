@@ -1,0 +1,83 @@
+#system-design-v2 #design-patterns  #behavioral-design-pattern
+
+## Glossary
+- The Strategy Pattern is all about defining a family of algorithms, encapsulating each one in dedicated class, and allowing client to swap at runtime. (You separate the behavior/algorithms into independent strategy objects.)
+- The Strategy Pattern is  for a *"HAS-A" relationship* between 2 objects - the context (the main object) and the strategy (the behavior object). And the context simply holds a reference to a strategy abstract class/interface
+- Typical scenarios include swapping different validation approaches, computation rules, selection/filtering logic, pricing or discount policies, or any feature where the underlying method changes while the system interface stays the same.
+- You use this pattern to support the open/closed principle—making it easy to add new behaviors without touching existing code.
+### Example
+
+**The Problem**
+
+- Assume you are building a Shopping Applicationl which includes a `Payment Service` 
+- The `PaymentService` contains different payment strategies - `UPI`, `Credit Card`, `Cash on Delivery`
+- The client can choose/pass any of the above 3 payment strategies to our application
+- The naive approach is to use an `if-else` logic and see which payment method the client has chosen - 
+
+```java
+public void pay(String method, double amount) {
+	if ("UPI".equals(method)) {    // UPI flow
+		System.out.println("Paying " + amount + " via UPI");
+	} 
+	else if ("CARD".equals(method)) {   // Card flow
+		System.out.println("Paying " + amount + " via Credit Card");
+	} 
+	else if ("COD".equals(method)) {    // COD flow
+		System.out.println("Paying " + amount + " via Cash on Delivery");
+	} 
+	else {
+		throw new IllegalArgumentException("Unsupported method");
+	}
+}
+```
+
+**The Solution**
+- Define a `PaymentStrategy` interface and let the application hold reference to the interface
+- Define concrete strategies - `UPIPaymentStrategy`, `CreditCardPaymentStrategy` and `CODPaymentStrategy` which will deal with the actual strategy logic
+
+![[UML Class Diagram for Strategy Design Pattern.png|750]]
+
+```java
+public interface PaymentStrategy {
+    void pay(double amount);
+}
+
+public class UPIPaymentStrategy implements PaymentStrategy {
+    private String upiId;    //This strategy can define its own variables to complete the logic
+  
+    @Override 
+    public void pay(double amount){
+        System.out.println("Processing UPI payment of " + amount + " from " + upiId);
+    }
+}
+
+public class CreditCardPaymentStrategy implements PaymentStrategy {
+    private String cardNumber;    //This strategy can define its own variables to complete the logic
+
+    @Override 
+    public void pay(double amount){
+        System.out.println("Charging card " + cardNumber + " for " + amount);
+    }
+}
+
+public class CODPaymentStrategy implements PaymentStrategy {
+
+    @Override 
+    llpublic void pay(double amount){
+        System.out.println("Order placed: pay " + amount + " on delivery");
+    }
+}
+
+public class Checkout {
+    private PaymentStrategy paymentStrategy;
+    
+    public Checkout(PaymentStrategy strategy){ 
+	    this.paymentStrategy = strategy; 
+	}
+	
+	public void processOrder(double amount){
+        // other order logic (validation, stock check)...
+        paymentStrategy.pay(amount);
+    }
+}
+```

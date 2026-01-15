@@ -1,0 +1,35 @@
+{
+  "items": [
+    {
+      "type": "group",
+      "ctime": 1730295570642,
+      "items": [
+        {
+          "type": "file",
+          "ctime": 1730295556612,
+          "path": "Ice Box.md"
+        }
+      ],
+      "title": "Pinned"
+    },
+    {
+      "type": "group",
+      "ctime": 1736962196624,
+      "items": [
+        {
+          "type": "file",
+          "ctime": 1736962223429,
+          "path": "Placement Preparation 101/_Placement Preparation.md",
+          "title": "_Placement Prep"
+        },
+        {
+          "type": "file",
+          "ctime": 1736962257958,
+          "path": "Placement Preparation 101/Database Management Systems.md",
+          "title": "DBMS"
+        }
+      ],
+      "title": "Placement"
+    }
+  ]
+}

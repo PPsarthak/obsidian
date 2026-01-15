@@ -1,0 +1,3 @@
+#daily-notes 
+
+#### Bullet Journal

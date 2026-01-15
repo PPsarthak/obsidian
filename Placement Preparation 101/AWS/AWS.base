@@ -1,0 +1,18 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.tags.contains("aws")
+    order:
+      - file.name
+      - file.tags
+      - file.ctime
+    columnSize:
+      file.name: 290
+      file.tags: 196
+  - type: cards
+    name: View
+    filters:
+      and:
+        - file.tags.contains("aws")

@@ -1,0 +1,13 @@
+
+- [x] Start with Git
+	- Maybe git will not be asked much in an interview - cover the important and leave the rest for future
+- [x] Start with Spring Boot
+- [x] Give all projects info to ChatGPT and store the chat of the project information
+- [x] Sorting
+	-  After sorting, remember to cover quick-select algorithm
+- [x] DBMS 
+	- [x] Completed till MySQL
+- [x] OOP
+- [x] OS
+- [x] Also start C
+- [x] Docker is a must now....

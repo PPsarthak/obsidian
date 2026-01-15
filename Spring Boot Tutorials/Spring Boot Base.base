@@ -1,0 +1,27 @@
+views:
+  - type: table
+    name: Table
+    filters:
+      and:
+        - file.hasTag("spring", "spring-boot")
+    order:
+      - file.name
+      - status
+      - last-reviewed
+      - file.tags
+    sort:
+      - property: status
+        direction: ASC
+      - property: file.ctime
+        direction: ASC
+    columnSize:
+      note.status: 116
+      note.last-reviewed: 131
+  - type: cards
+    name: View
+    filters:
+      and:
+        - file.hasTag("spring-boot")
+    cardSize: 380
+    imageFit: contain
+    imageAspectRatio: 1

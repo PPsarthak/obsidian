@@ -1,0 +1,35 @@
+{
+	"nodes":[
+		{"id":"4781dd4ccc2d8d9d","type":"text","text":"Placement Preparation 101","x":-570,"y":-680,"width":250,"height":60,"color":"1"},
+		{"id":"b8b1ff0678b2f8ec","type":"text","text":"## Core Subjects","x":-1920,"y":-279,"width":250,"height":156,"color":"#56f5d5"},
+		{"id":"b8e3e53459f3d778","type":"file","file":"Placement Preparation 101/Computer Networks.md","x":-1920,"y":121,"width":748,"height":400,"color":"6"},
+		{"id":"2aec689aed9b11bb","type":"file","file":"Placement Preparation 101/Object Oriented Programming.md","x":-951,"y":121,"width":700,"height":400,"color":"6"},
+		{"id":"cb42395310e8b382","type":"file","file":"Placement Preparation 101/Database Management Systems.md","x":-4200,"y":121,"width":1182,"height":759,"color":"6"},
+		{"id":"2c5b56b0fe109e86","type":"file","file":"Placement Preparation 101/Operating Systems.md","x":-2824,"y":121,"width":740,"height":400,"color":"6"},
+		{"id":"c6f2a99e5caf356d","type":"text","text":"## HR Preparation","x":840,"y":-201,"width":250,"height":82,"color":"#f25fed"},
+		{"id":"b143c74f3228876e","type":"file","file":"Placement Preparation 101/HR Questions and Answers - Interview.md","x":80,"y":162,"width":760,"height":400,"color":"5"},
+		{"id":"bb4e6df470faa95c","type":"file","file":"Placement Preparation 101/Projects/__Project Details on Resume.md","x":1280,"y":162,"width":760,"height":400,"color":"5"},
+		{"id":"3347bd8018bffa87","type":"text","text":"## Tools","x":-570,"y":-1040,"width":250,"height":130,"color":"3"},
+		{"id":"01c2a1cfcbab5a39","type":"file","file":"Placement Preparation 101/C Notes.md","x":-193,"y":-2040,"width":509,"height":400,"color":"2"},
+		{"id":"a691442db0edfe6d","type":"file","file":"Placement Preparation 101/Linux.md","x":316,"y":-2240,"width":450,"height":400,"color":"2"},
+		{"id":"93154fa30938e05d","type":"file","file":"Spring Boot Tutorials/__Spring Boot.md","x":-753,"y":-2240,"width":502,"height":400,"color":"2"},
+		{"id":"d483274e72b1b5fe","type":"file","file":"Placement Preparation 101/GIT.md","x":-1913,"y":-2240,"width":556,"height":400,"color":"2"},
+		{"id":"413d4657fd53be72","type":"file","file":"Placement Preparation 101/Docker.md","x":-1329,"y":-2070,"width":513,"height":400,"color":"2"}
+	],
+	"edges":[
+		{"id":"00c8ba6146b9b7ef","fromNode":"4781dd4ccc2d8d9d","fromSide":"bottom","toNode":"c6f2a99e5caf356d","toSide":"top"},
+		{"id":"a096ac470151af6c","fromNode":"c6f2a99e5caf356d","fromSide":"bottom","toNode":"b143c74f3228876e","toSide":"top"},
+		{"id":"d09368d5a7690908","fromNode":"b8b1ff0678b2f8ec","fromSide":"bottom","toNode":"2c5b56b0fe109e86","toSide":"top"},
+		{"id":"a136336554170848","fromNode":"b8b1ff0678b2f8ec","fromSide":"bottom","toNode":"2aec689aed9b11bb","toSide":"top"},
+		{"id":"674de041ac1e1988","fromNode":"b8b1ff0678b2f8ec","fromSide":"bottom","toNode":"cb42395310e8b382","toSide":"top"},
+		{"id":"3a535ec5aea80477","fromNode":"4781dd4ccc2d8d9d","fromSide":"bottom","toNode":"b8b1ff0678b2f8ec","toSide":"top"},
+		{"id":"a646db75a10f89b3","fromNode":"b8b1ff0678b2f8ec","fromSide":"bottom","toNode":"b8e3e53459f3d778","toSide":"top"},
+		{"id":"4ea682771057a1ac","fromNode":"4781dd4ccc2d8d9d","fromSide":"top","toNode":"3347bd8018bffa87","toSide":"bottom"},
+		{"id":"7423fbc2d54e31b8","fromNode":"3347bd8018bffa87","fromSide":"top","toNode":"d483274e72b1b5fe","toSide":"bottom"},
+		{"id":"faf96f6c4396e2fd","fromNode":"3347bd8018bffa87","fromSide":"top","toNode":"413d4657fd53be72","toSide":"bottom"},
+		{"id":"73231c31f7e9a0ad","fromNode":"3347bd8018bffa87","fromSide":"top","toNode":"93154fa30938e05d","toSide":"bottom"},
+		{"id":"6eae6089857db751","fromNode":"3347bd8018bffa87","fromSide":"top","toNode":"01c2a1cfcbab5a39","toSide":"bottom"},
+		{"id":"b0ebc9423db44bc4","fromNode":"3347bd8018bffa87","fromSide":"top","toNode":"a691442db0edfe6d","toSide":"bottom"},
+		{"id":"cf982bf783a83254","fromNode":"c6f2a99e5caf356d","fromSide":"bottom","toNode":"bb4e6df470faa95c","toSide":"top"}
+	]
+}
