@@ -1,0 +1,279 @@
+/* Colored Folders */
+/* Colored Folders */
+
+/* Commented the below code as a change on 15/01/26 */
+/* body {
+    --Fold0: #d32f2f;
+    --Fold1: #f39b9b;
+    --Fold2: #f0ae59; 
+    --Fold3: #f1ca5d;
+    --Fold4: #9dcd78;
+    --Fold5: #8ab6e2;
+    --Fold6: #aaa5db;
+    --Fold7: #d399cf;
+    --Fold8: #cda485;
+    --Fold9: #b9c0c7;
+    --FoldA: #f0aaaa;
+    --FoldB: #f1b86f;
+    --FoldC: #7acc93;
+    --FoldD: #87c9d9;
+    --FoldE: #96abde;
+    --FoldF: #eb9fc9; 
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+} */
+
+
+/* Added the below code as a change on 15/01/26 */
+/* =========================
+   LIGHT MODE
+   ========================= */
+body.theme-light {
+  --Fold0:  #d32f2f;  /* red */
+  --Fold1:  #e91e63;  /* pink */
+  --Fold2:  #ff5722;  /* red-orange */
+  --Fold3:  #ff9800;  /* orange */
+  --Fold4:  #ffc107;  /* amber */
+  --Fold5:  #cddc39;  /* lime */
+  --Fold6:  #4caf50;  /* green */
+  --Fold7:  #009688;  /* teal */
+
+  --Fold8:  #00bcd4;  /* cyan */
+  --Fold9:  #03a9f4;  /* light blue */
+  --Fold10: #2196f3;  /* blue */
+  --Fold11: #3f51b5;  /* indigo */
+  --Fold12: #673ab7;  /* deep purple */
+  --Fold13: #9c27b0;  /* purple */
+  --Fold14: #ab47bc;  /* violet */
+  --Fold15: #ec407a;  /* magenta */
+}
+
+/* Added the below code as a change on 15/01/26 */
+/* =========================
+   DARK MODE
+   ========================= */
+body.theme-dark {
+  --Fold0:  #ef9a9a;
+  --Fold1:  #f48fb1;
+  --Fold2:  #ffab91;
+  --Fold3:  #ffcc80;
+  --Fold4:  #ffe082;
+  --Fold5:  #e6ee9c;
+  --Fold6:  #a5d6a7;
+  --Fold7:  #80cbc4;
+
+  --Fold8:  #80deea;
+  --Fold9:  #81d4fa;
+  --Fold10: #90caf9;
+  --Fold11: #9fa8da;
+  --Fold12: #b39ddb;
+  --Fold13: #ce93d8;
+  --Fold14: #d1a7e6;
+  --Fold15: #f48fb1;
+}
+
+/* =========================
+   CYCLIC FOLDER COLORING
+   ========================= */
+.nav-files-container > div > .nav-folder:nth-child(16n + 1) { --folder-color: var(--Fold0); }
+.nav-files-container > div > .nav-folder:nth-child(16n + 2) { --folder-color: var(--Fold1); }
+.nav-files-container > div > .nav-folder:nth-child(16n + 3) { --folder-color: var(--Fold2); }
+.nav-files-container > div > .nav-folder:nth-child(16n + 4) { --folder-color: var(--Fold3); }
+.nav-files-container > div > .nav-folder:nth-child(16n + 5) { --folder-color: var(--Fold4); }
+.nav-files-container > div > .nav-folder:nth-child(16n + 6) { --folder-color: var(--Fold5); }
+.nav-files-container > div > .nav-folder:nth-child(16n + 7) { --folder-color: var(--Fold6); }
+.nav-files-container > div > .nav-folder:nth-child(16n + 8) { --folder-color: var(--Fold7); }
+.nav-files-container > div > .nav-folder:nth-child(16n + 9) { --folder-color: var(--Fold8); }
+.nav-files-container > div > .nav-folder:nth-child(16n + 10) { --folder-color: var(--Fold9); }
+.nav-files-container > div > .nav-folder:nth-child(16n + 11) { --folder-color: var(--Fold10); }
+.nav-files-container > div > .nav-folder:nth-child(16n + 12) { --folder-color: var(--Fold11); }
+.nav-files-container > div > .nav-folder:nth-child(16n + 13) { --folder-color: var(--Fold12); }
+.nav-files-container > div > .nav-folder:nth-child(16n + 14) { --folder-color: var(--Fold13); }
+.nav-files-container > div > .nav-folder:nth-child(16n + 15) { --folder-color: var(--Fold14); }
+.nav-files-container > div > .nav-folder:nth-child(16n + 16) { --folder-color: var(--Fold15); }
+
+.mermaid {
+    max-width: 1600px; /* Adjust width as needed */
+    margin: 0 auto; /* Center the diagram */
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+}
+
+.er.attributeBoxOdd {
+    fill: var(--background-primary) !important;
+}
+.er.attributeBoxEven {
+    fill: var(--background-secondary) !important;
+}
+
+.nav-files-container > div > .nav-folder {
+   border: 1px solid var(--divider-color);
+   /* Commented the below code as a change on 15/01/26 */
+   /* border-left: 4px solid var(--folder-color); */
+   border-radius: var(--radius-s);
+}
+
+.nav-files-container > div > .nav-folder + .nav-folder {
+   margin-top: var(--size-2-2);
+}
+
+.nav-folder-title {
+    /* Added the below code as a change on 15/01/26 */
+    border-left: 8px solid var(--folder-color);
+    color: var(--folder-color);
+    font-weight: var(--font-bold);
+}
+
+
+/* Show footnotes on mouseover */
+.cm-inline-footnote:not(.cm-inline-footnote-start):not(.cm-inline-footnote-end),
+.cm-active .cm-inline-footnote-start::after {
+    display: none;
+}
+.cm-inline-footnote-start::after {
+    content:'📒';
+    opacity: 1;
+    position: absolute;
+    background: var(--background-color-default);
+    left: 0;
+    z-index: 99;
+    width: 20px;
+}
+.cm-active .cm-inline-footnote:not(.cm-inline-footnote-start):not(.cm-inline-footnote-end) {
+    display: inline;
+}
+.cm-inline-footnote-start {
+    position: relative;
+}
+.cm-inline-footnote-start:hover + .cm-inline-footnote:not(.cm-inline-footnote-start):not(.cm-inline-footnote-end) {
+    display: inline-block;
+    position: absolute;
+    background: var(--background-color-default);
+    border: 1px solid var(--border-color-light);
+    padding: 0.5rem;
+    z-index: 999;
+    left: auto;
+    top: auto;
+    margin-left: 0.5em;
+    border-radius: 6px;
+    box-shadow: 1px 1px 6px var(--border-color-light);
+    max-width: 400px;
+}
+
+
+/* Different bullet symbols for each indentation */
+/* LEVEL 1 */
+.markdown-reading-view ul > li > .list-bullet:after,
+.markdown-source-view.mod-cm6 .HyperMD-list-line-1 .list-bullet:after {
+/* Bullet */
+height: 7px;
+width: 7px;
+border-radius: 50%;
+}
+/* LEVEL 2 */
+.markdown-reading-view ul > li > ul > li > .list-bullet:after,
+.markdown-source-view.mod-cm6 .HyperMD-list-line-2 .list-bullet:after {
+/* Hollow Bullet */
+height: 7px;
+width: 7px;
+background-color: transparent;
+border-style: solid;
+border-radius: 50%;
+border-width: 1px;
+}
+/* LEVEL 3 */
+.markdown-reading-view ul > li > ul > li > ul > li > .list-bullet:after,
+.markdown-source-view.mod-cm6 .HyperMD-list-line-3 .list-bullet:after {
+/* Solid Square */
+height: 5px;
+width: 5px;
+border-radius: 0%;
+background-color: rgb(89, 89, 89);
+}
+.markdown-source-view.mod-cm6 .HyperMD-list-line-3 .list-bullet:after {
+/* Solid Square */
+height: 7px;
+width: 7px;
+border-radius: 0%;
+/* background-color: rgb(89, 89, 89); */
+}
+/* LEVEL 4 */
+.markdown-reading-view ul > li > ul > li > ul > li > ul > li >.list-bullet:after,
+.markdown-source-view.mod-cm6 .HyperMD-list-line-4 .list-bullet:after {
+/* Triangle */
+height: 0;
+width: 0;
+background-color: transparent;
+border-radius: 0%;
+border-top: 5px solid transparent;
+border-bottom: 5px solid transparent;
+border-left: 8px solid;
+border-right: 0px solid;
+}
+
+
+/* Colored Headings and Formatting */
+/* Header colors w/ divider line on H1, H2, H3 */
+body {
+    --h1-color: #9164DD; /* purple */
+    --h2-color: #3d99ea; /* blue */
+    --h3-color: #e6a700; /* yellow ffba00 */
+    --h4-color: #46AC79; /* green */
+    --h5-color: #e2891a; /* orange */
+    --h6-color: #c71919; /* red */
+}
+.HyperMD-header-1::after, h1,
+.HyperMD-header-2::after, h2,
+.HyperMD-header-3::after, h3 {
+    display: block;
+    content: "";
+    padding-bottom: 2px;  
+    border-bottom: 1px solid gray;
+}
+
+
+/* Add line below note title */
+.inline-title {
+    padding-bottom: 2px;
+    border-bottom: 1px solid lightgray;
+}
+
+
+/* Change background color & text color only if Dark mode is enabled and you are not on Mobile */
+body.theme-dark:not(.is-mobile) {
+  /*--text-normal: #BFBFBF;*/ /* Slightly darker text color */
+  /*--background-primary: #191919;*/ /* darker gray */
+  /*--background-primary-alt: #3a3a3a;*/ /* lighter gray */
+}
+
+/* Formatting colors */
+body {
+  --bold-color: #B293E7; /* purple */
+  --italic-color: #64adee; /* blue */
+  --text-highlight-bg: #746119; /* yellow */
+}
+
+
+/* Rounded highlights */
+span.cm-highlight, mark {
+	background-color: #746119;
+	-webkit-box-decoration-break: clone;
+	padding-left:   6px;
+	padding-right:  6px;
+	padding-top:    0px;
+	padding-bottom: 0px;
+	border-radius: 10px;
+}
+
+/* For exporting notes to PDF with Anupuccin Dark theme */
+@media print {
+  body {
+    background-color: var(--background-primary) !important;
+    color: var(--text-normal) !important;
+  }
+
+  .markdown-preview-view {
+    background-color: var(--background-primary) !important;
+  }
+}

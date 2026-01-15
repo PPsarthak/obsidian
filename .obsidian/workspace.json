@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "3714bead622ecedb",
+        "id": "0c01a061c85b6610",
         "type": "tabs",
         "children": [
           {
-            "id": "8809641ef26ed2da",
+            "id": "3b594ac9835df8a0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Placement Preparation 101/Java Reflection API.md",
+                "file": "Placement Preparation 101/Docker.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Java Reflection API"
+              "title": "Docker"
             }
           }
         ]
@@ -109,23 +109,6 @@
             }
           },
           {
-            "id": "a42746ee317d311c",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Pending Notes to complete....md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
-              },
-              "pinned": true,
-              "icon": "lucide-file",
-              "title": "Pending Notes to complete..."
-            }
-          },
-          {
             "id": "62a86eea7e43e98d",
             "type": "leaf",
             "state": {
@@ -136,7 +119,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
@@ -181,13 +164,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Placement Preparation 101/Java Reflection API.md",
+                "file": "Placement Preparation 101/Docker.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Java Reflection API"
+              "title": "Outline of Docker"
             }
           },
           {
@@ -210,7 +193,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Placement Preparation 101/Java Reflection API.md",
+                "file": "System Design/Current Roadmap.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -220,7 +203,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Java Reflection API"
+              "title": "Backlinks for Current Roadmap"
             }
           },
           {
@@ -238,7 +221,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 381.5
+    "width": 381.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -261,8 +245,15 @@
   },
   "active": "62a86eea7e43e98d",
   "lastOpenFiles": [
-    "README.md",
+    "Placement Preparation 101/ChatGPT - Git Tutorial.pdf",
+    "_Images/2D Convolution.gif",
+    "_Images/2 State Process Model.png",
+    "Machine Learning & Pytorch/Pytorch/Autograd and Backpropagation.md",
+    "Machine Learning & Pytorch",
+    "Machine Learning & Pytorch/Pytorch/_ReadME.md",
     "Placement Preparation 101/Java Reflection API.md",
+    "Pending Notes to complete....md",
+    "README.md",
     "Placement Preparation 101/GIT.md",
     "Placement Preparation 101/Maven.md",
     "New Action Plan.md",
@@ -283,10 +274,6 @@
     "__Daily Notes/10-02-25.md",
     "__Daily Notes/08-02-25.md",
     "__Daily Notes/03-08-25.md",
-    "__Daily Notes/01-08-25.md",
-    "__Daily Notes/02-01-25.md",
-    "__Daily Notes/{{date}}.md",
-    "System Design/Design Pattern/14. Bridge Design Pattern.md",
     "UML Class Diagram for Bridge Design Pattern.png",
     "UML Class Diagram for Vending Machine.png",
     "_Images/UML Class Diagram for Composite Design Pattern.png",
@@ -296,18 +283,15 @@
     "_Images/Types of Streaming in gRPC.png",
     "_Images/States of Circuit Breaker.png",
     "_Images/Circuit Breaker Solution.png",
-    "_Images/Circuit Breaker - Problem in Microservice Example.png",
     "System Design V2/Design Patterns/__Design Pattern Base.base",
     "System Design/HLD",
     "System Design V2/System Design V2.base",
-    "_Images/UML Class Diagram for Pizza Billing System.png",
     "System Design/LLD Questions",
     "System Design/Design Pattern/Creational",
     "System Design/Design Pattern/Creational",
     "System Design/Design Pattern/Behavioral",
     "System Design/Design Pattern/Structural",
     "System Design/Design Pattern",
-    "Creational Design Pattern",
     "Life @ WU/Learning Canvas.canvas",
     "Spring Boot Tutorials/Spring Boot.canvas"
   ]

@@ -5,6 +5,7 @@ tags:
   - docker
 ---
 #placement-preparation #docker 
+
 > ref - https://www.youtube.com/watch?v=HR7wjLxQw1Q
 ### Docker Containers and Images
 **Docker Containers**

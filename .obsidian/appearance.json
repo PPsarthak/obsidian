@@ -1,12 +1,12 @@
 {
-  "theme": "moonstone",
+  "theme": "obsidian",
   "interfaceFontFamily": "JetBrains Mono,Cambria Math",
   "baseFontSize": 16,
   "baseFontSizeAction": true,
-  "cssTheme": "",
+  "cssTheme": "AnuPpuccin",
   "accentColor": "",
   "enabledCssSnippets": [
-    "Custom CSS 2"
+    "old"
   ],
   "nativeMenus": false,
   "showRibbon": true,

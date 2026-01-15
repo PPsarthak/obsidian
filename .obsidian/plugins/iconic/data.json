@@ -25,6 +25,12 @@
     "Invest Graph/__Invest Graph - Mutual Fund Holdings & NAV Tracker.md": {
       "icon": "lucide-save"
     },
+    "Machine Learning & Pytorch/Pytorch/PyTorch Tutorial.md": {
+      "icon": "lucide-flame"
+    },
+    "Machine Learning & Pytorch/Pytorch/Tensor Basics.md": {
+      "icon": "lucide-chart-network"
+    },
     "Pending Notes to complete....md": {
       "icon": "lucide-timer"
     },
@@ -60,12 +66,6 @@
     },
     "Placement Preparation 101/_Placement Preparation.md": {
       "icon": "lucide-send"
-    },
-    "Pytorch/PyTorch Tutorial.md": {
-      "icon": "lucide-flame"
-    },
-    "Pytorch/Tensor Basics.md": {
-      "icon": "lucide-chart-network"
     },
     "Spring Boot Tutorials/Circuit Breaker.md": {
       "icon": "lucide-circuit-board"

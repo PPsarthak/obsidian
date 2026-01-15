@@ -1,222 +1,203 @@
-/* Colored Folders */
-/* Colored Folders */
+/* =========================================================
+   GLOBAL FONT
+   ========================================================= */
 body {
-    --Fold0: #d32f2f;   /* vibrant red */
-    --Fold1: #f39b9b;   /* soft pink */
-    --Fold2: #f0ae59;   /* amber orange */
-    --Fold3: #f1ca5d;   /* light yellow */
-    --Fold4: #9dcd78;   /* soft green */
-    --Fold5: #8ab6e2;   /* light blue */
-    --Fold6: #aaa5db;   /* lavender */
-    --Fold7: #d399cf;   /* pastel purple */
-    --Fold8: #cda485;   /* tan brown */
-    --Fold9: #b9c0c7;   /* grayish blue */
-    --FoldA: #f0aaaa;   /* muted pink */
-    --FoldB: #f1b86f;   /* peach orange */
-    --FoldC: #7acc93;   /* teal green */
-    --FoldD: #87c9d9;   /* sky blue */
-    --FoldE: #96abde;   /* periwinkle */
-    --FoldF: #eb9fc9;   /* soft magenta */
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: 600;
-    font-style: normal;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
 }
 
-.nav-files-container > div > .nav-folder:nth-child(16n + 1) { --folder-color: var(--Fold0); }
-.nav-files-container > div > .nav-folder:nth-child(16n + 2) { --folder-color: var(--Fold1); }
-.nav-files-container > div > .nav-folder:nth-child(16n + 3) { --folder-color: var(--Fold2); }
-.nav-files-container > div > .nav-folder:nth-child(16n + 4) { --folder-color: var(--Fold3); }
-.nav-files-container > div > .nav-folder:nth-child(16n + 5) { --folder-color: var(--Fold4); }
-.nav-files-container > div > .nav-folder:nth-child(16n + 6) { --folder-color: var(--Fold5); }
-.nav-files-container > div > .nav-folder:nth-child(16n + 7) { --folder-color: var(--Fold6); }
-.nav-files-container > div > .nav-folder:nth-child(16n + 8) { --folder-color: var(--Fold7); }
-.nav-files-container > div > .nav-folder:nth-child(16n + 9) { --folder-color: var(--Fold8); }
-.nav-files-container > div > .nav-folder:nth-child(16n + 10) { --folder-color: var(--Fold9); }
-.nav-files-container > div > .nav-folder:nth-child(16n + 11) { --folder-color: var(--FoldA); }
-.nav-files-container > div > .nav-folder:nth-child(16n + 12) { --folder-color: var(--FoldB); }
-.nav-files-container > div > .nav-folder:nth-child(16n + 13) { --folder-color: var(--FoldC); }
-.nav-files-container > div > .nav-folder:nth-child(16n + 14) { --folder-color: var(--FoldD); }
-.nav-files-container > div > .nav-folder:nth-child(16n + 15) { --folder-color: var(--FoldE); }
-.nav-files-container > div > .nav-folder:nth-child(16n + 16) { --folder-color: var(--FoldF); }
+/* =========================================================
+   FOLDER COLOR PALETTES
+   ========================================================= */
 
+/* LIGHT MODE */
+body.theme-light {
+  --Fold1: #c62828; /* red */
+  --Fold2: #ad1457; /* rose */
+  --Fold3: #ef6c00; /* orange */
+  --Fold4: #f9a825; /* yellow */
+  --Fold5: #2e7d32; /* green */
+  --Fold6: #0277bd; /* blue */
+  --Fold7: #6a1b9a; /* purple */
+  --Fold8: #4e342e; /* brown */
+}
+
+/* DARK MODE */
+body.theme-dark {
+  --Fold1: #ef9a9a;
+  --Fold2: #f48fb1;
+  --Fold3: #ffcc80;
+  --Fold4: #fff59d;
+  --Fold5: #a5d6a7;
+  --Fold6: #90caf9;
+  --Fold7: #ce93d8;
+  --Fold8: #bcaaa4;
+}
+
+/* =========================================================
+   STABLE FOLDER COLORING (DEPTH-BASED)
+   ========================================================= */
+
+.nav-folder-title[data-depth="1"] { --folder-color: var(--Fold1); }
+.nav-folder-title[data-depth="2"] { --folder-color: var(--Fold2); }
+.nav-folder-title[data-depth="3"] { --folder-color: var(--Fold3); }
+.nav-folder-title[data-depth="4"] { --folder-color: var(--Fold4); }
+.nav-folder-title[data-depth="5"] { --folder-color: var(--Fold5); }
+.nav-folder-title[data-depth="6"] { --folder-color: var(--Fold6); }
+.nav-folder-title[data-depth="7"] { --folder-color: var(--Fold7); }
+.nav-folder-title[data-depth="8"] { --folder-color: var(--Fold8); }
+
+/* Folder title styling */
+.nav-folder-title {
+  color: var(--folder-color);
+  border-left: 4px solid var(--folder-color);
+  padding-left: 6px;
+  font-weight: var(--font-bold);
+  border-radius: var(--radius-s);
+}
+
+/* Folder spacing */
+.nav-folder {
+  margin-top: var(--size-2-2);
+}
+
+/* =========================================================
+   MERMAID DIAGRAMS
+   ========================================================= */
 .mermaid {
-    max-width: 1600px; /* Adjust width as needed */
-    margin: 0 auto; /* Center the diagram */
-    overflow-x: auto; /* Enable horizontal scrolling if needed */
+  max-width: 1600px;
+  margin: 0 auto;
+  overflow-x: auto;
 }
 
+/* ER diagram background fix */
 .er.attributeBoxOdd {
-    fill: var(--background-primary) !important;
+  fill: var(--background-primary) !important;
 }
 .er.attributeBoxEven {
-    fill: var(--background-secondary) !important;
+  fill: var(--background-secondary) !important;
 }
 
-.nav-files-container > div > .nav-folder {
-   border: 1px solid var(--divider-color);
-   border-left: 4px solid var(--folder-color);
-   border-radius: var(--radius-s);
-}
-
-.nav-files-container > div > .nav-folder + .nav-folder {
-   margin-top: var(--size-2-2);
-}
-
-.nav-folder-title {
-   color: var(--folder-color);
-   font-weight: var(--font-bold);
-}
-
-
-/* Show footnotes on mouseover */
+/* =========================================================
+   FOOTNOTE HOVER PREVIEW
+   ========================================================= */
 .cm-inline-footnote:not(.cm-inline-footnote-start):not(.cm-inline-footnote-end),
 .cm-active .cm-inline-footnote-start::after {
-    display: none;
+  display: none;
 }
-.cm-inline-footnote-start::after {
-    content:'📒';
-    opacity: 1;
-    position: absolute;
-    background: var(--background-color-default);
-    left: 0;
-    z-index: 99;
-    width: 20px;
-}
-.cm-active .cm-inline-footnote:not(.cm-inline-footnote-start):not(.cm-inline-footnote-end) {
-    display: inline;
-}
+
 .cm-inline-footnote-start {
-    position: relative;
-}
-.cm-inline-footnote-start:hover + .cm-inline-footnote:not(.cm-inline-footnote-start):not(.cm-inline-footnote-end) {
-    display: inline-block;
-    position: absolute;
-    background: var(--background-color-default);
-    border: 1px solid var(--border-color-light);
-    padding: 0.5rem;
-    z-index: 999;
-    left: auto;
-    top: auto;
-    margin-left: 0.5em;
-    border-radius: 6px;
-    box-shadow: 1px 1px 6px var(--border-color-light);
-    max-width: 400px;
+  position: relative;
 }
 
-
-/* Different bullet symbols for each indentation */
-/* LEVEL 1 */
-.markdown-reading-view ul > li > .list-bullet:after,
-.markdown-source-view.mod-cm6 .HyperMD-list-line-1 .list-bullet:after {
-/* Bullet */
-height: 7px;
-width: 7px;
-border-radius: 50%;
-}
-/* LEVEL 2 */
-.markdown-reading-view ul > li > ul > li > .list-bullet:after,
-.markdown-source-view.mod-cm6 .HyperMD-list-line-2 .list-bullet:after {
-/* Hollow Bullet */
-height: 7px;
-width: 7px;
-background-color: transparent;
-border-style: solid;
-border-radius: 50%;
-border-width: 1px;
-}
-/* LEVEL 3 */
-.markdown-reading-view ul > li > ul > li > ul > li > .list-bullet:after,
-.markdown-source-view.mod-cm6 .HyperMD-list-line-3 .list-bullet:after {
-/* Solid Square */
-height: 5px;
-width: 5px;
-border-radius: 0%;
-background-color: rgb(89, 89, 89);
-}
-.markdown-source-view.mod-cm6 .HyperMD-list-line-3 .list-bullet:after {
-/* Solid Square */
-height: 7px;
-width: 7px;
-border-radius: 0%;
-/* background-color: rgb(89, 89, 89); */
-}
-/* LEVEL 4 */
-.markdown-reading-view ul > li > ul > li > ul > li > ul > li >.list-bullet:after,
-.markdown-source-view.mod-cm6 .HyperMD-list-line-4 .list-bullet:after {
-/* Triangle */
-height: 0;
-width: 0;
-background-color: transparent;
-border-radius: 0%;
-border-top: 5px solid transparent;
-border-bottom: 5px solid transparent;
-border-left: 8px solid;
-border-right: 0px solid;
+.cm-inline-footnote-start::after {
+  content: "📒";
+  position: absolute;
+  left: 0;
+  z-index: 99;
 }
 
+.cm-active
+.cm-inline-footnote:not(.cm-inline-footnote-start):not(.cm-inline-footnote-end) {
+  display: inline;
+}
 
-/* Colored Headings and Formatting */
-/* Header colors w/ divider line on H1, H2, H3 */
+.cm-inline-footnote-start:hover
++ .cm-inline-footnote:not(.cm-inline-footnote-start):not(.cm-inline-footnote-end) {
+  display: inline-block;
+  position: absolute;
+  background: var(--background-primary);
+  border: 1px solid var(--border-color-light);
+  padding: 0.5rem;
+  border-radius: 6px;
+  box-shadow: 1px 1px 6px var(--border-color-light);
+  max-width: 400px;
+  z-index: 999;
+}
+
+/* =========================================================
+   LIST BULLET STYLES (BY DEPTH)
+   ========================================================= */
+
+/* Level 1 – solid circle */
+.list-bullet:after {
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+}
+
+/* Level 2 – hollow circle */
+.HyperMD-list-line-2 .list-bullet:after {
+  background: transparent;
+  border: 1px solid currentColor;
+}
+
+/* Level 3 – square */
+.HyperMD-list-line-3 .list-bullet:after {
+  border-radius: 0;
+  height: 7px;
+  width: 7px;
+}
+
+/* Level 4 – triangle */
+.HyperMD-list-line-4 .list-bullet:after {
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 8px solid currentColor;
+}
+
+/* =========================================================
+   HEADING COLORS
+   ========================================================= */
 body {
-    --h1-color: #9164DD; /* purple */
-    --h2-color: #3d99ea; /* blue */
-    --h3-color: #e6a700; /* yellow ffba00 */
-    --h4-color: #46AC79; /* green */
-    --h5-color: #e2891a; /* orange */
-    --h6-color: #c71919; /* red */
-}
-.HyperMD-header-1::after, h1,
-.HyperMD-header-2::after, h2,
-.HyperMD-header-3::after, h3 {
-    display: block;
-    content: "";
-    padding-bottom: 2px;  
-    border-bottom: 1px solid gray;
+  --h1-color: #9164dd;
+  --h2-color: #3d99ea;
+  --h3-color: #e6a700;
+  --h4-color: #46ac79;
+  --h5-color: #e2891a;
+  --h6-color: #c71919;
 }
 
+/* Divider under H1–H3 */
+h1, h2, h3 {
+  border-bottom: 1px solid gray;
+  padding-bottom: 2px;
+}
 
-/* Add line below note title */
+/* Note title divider */
 .inline-title {
-    padding-bottom: 2px;
-    border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 2px;
 }
 
-
-/* Change background color & text color only if Dark mode is enabled and you are not on Mobile */
-body.theme-dark:not(.is-mobile) {
-  /*--text-normal: #BFBFBF;*/ /* Slightly darker text color */
-  /*--background-primary: #191919;*/ /* darker gray */
-  /*--background-primary-alt: #3a3a3a;*/ /* lighter gray */
-}
-
-/* Formatting colors */
+/* =========================================================
+   FORMATTING COLORS
+   ========================================================= */
 body {
-  --bold-color: #B293E7; /* purple */
-  --italic-color: #64adee; /* blue */
-  --text-highlight-bg: #746119; /* yellow */
+  --bold-color: #b293e7;
+  --italic-color: #64adee;
+  --text-highlight-bg: #746119;
 }
-
 
 /* Rounded highlights */
-span.cm-highlight, mark {
-	background-color: #746119;
-	-webkit-box-decoration-break: clone;
-	padding-left:   6px;
-	padding-right:  6px;
-	padding-top:    0px;
-	padding-bottom: 0px;
-	border-radius: 10px;
+mark, span.cm-highlight {
+  background-color: var(--text-highlight-bg);
+  padding: 0 6px;
+  border-radius: 10px;
+  -webkit-box-decoration-break: clone;
 }
 
-/* For exporting notes to PDF with Anupuccin Dark theme */
+/* =========================================================
+   PRINT / PDF EXPORT
+   ========================================================= */
 @media print {
-  body {
-    background-color: var(--background-primary) !important;
-    color: var(--text-normal) !important;
-  }
-
+  body,
   .markdown-preview-view {
     background-color: var(--background-primary) !important;
+    color: var(--text-normal) !important;
   }
 }
