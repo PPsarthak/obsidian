@@ -4,35 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "80915a0dcd33bf00",
+        "id": "3714bead622ecedb",
         "type": "tabs",
         "children": [
           {
-            "id": "faa45de00e082929",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Placement Preparation 101/Maven.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Maven"
-            }
-          },
-          {
-            "id": "b3c662ae0b87b96f",
+            "id": "8809641ef26ed2da",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -55,8 +31,7 @@
               "title": "Java Reflection API"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -149,8 +124,19 @@
               "icon": "lucide-file",
               "title": "Pending Notes to complete..."
             }
+          },
+          {
+            "id": "62a86eea7e43e98d",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
@@ -236,14 +222,23 @@
               "icon": "links-coming-in",
               "title": "Backlinks for Java Reflection API"
             }
+          },
+          {
+            "id": "ab3da21a5b02082b",
+            "type": "leaf",
+            "state": {
+              "type": "git-history-view",
+              "state": {},
+              "icon": "history",
+              "title": "History"
+            }
           }
         ],
         "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 286.5,
-    "collapsed": true
+    "width": 381.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -260,14 +255,17 @@
       "random-note:Open random note": false,
       "templater-obsidian:Templater": false,
       "iconic:Open rulebook": false,
-      "homepage:Open homepage": false
+      "homepage:Open homepage": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b3c662ae0b87b96f",
+  "active": "62a86eea7e43e98d",
   "lastOpenFiles": [
-    "New Action Plan.md",
+    "README.md",
     "Placement Preparation 101/Java Reflection API.md",
+    "Placement Preparation 101/GIT.md",
     "Placement Preparation 101/Maven.md",
+    "New Action Plan.md",
     "Placement Preparation 101/Object Oriented Programming.md",
     "Placement Preparation 101/Web Flux.md",
     "Placement Preparation 101/Richardson Maturity Model.md",
@@ -289,9 +287,7 @@
     "__Daily Notes/02-01-25.md",
     "__Daily Notes/{{date}}.md",
     "System Design/Design Pattern/14. Bridge Design Pattern.md",
-    "System Design/Design Pattern/3. Decorator Design Pattern.md",
     "UML Class Diagram for Bridge Design Pattern.png",
-    "_Excalidraw/System Design.md",
     "UML Class Diagram for Vending Machine.png",
     "_Images/UML Class Diagram for Composite Design Pattern.png",
     "_Images/UML Class Diagram for Composite Design Pattern.png",
