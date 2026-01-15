@@ -1,0 +1,17 @@
+{
+  "showLineNumber": true,
+  "alwaysUpdateLinks": true,
+  "readableLineLength": false,
+  "foldHeading": false,
+  "promptDelete": false,
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A3",
+    "landscape": false,
+    "margin": "1",
+    "downscalePercent": 100
+  },
+  "autoConvertHtml": false,
+  "showInlineTitle": true,
+  "spellcheck": false
+}

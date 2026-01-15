@@ -1,0 +1,1 @@
+##### 📅 Today’s Note - [[__Daily Notes/{{date}}]]

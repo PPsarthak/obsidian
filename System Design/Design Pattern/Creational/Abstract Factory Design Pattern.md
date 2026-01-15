@@ -1,0 +1,13 @@
+#system-design-v2 #design-patterns  #creational-design-pattern
+
+## Glossary
+- Extension of Factory Design Pattern for creating families of objects
+
+Assume we have a `Vehicle` interface and `Car` and `Bus` implementing it. 
+This code can be written using Factory Method Design Pattern too. Now let's assume we have 2 `Car` - `Electric` and `Diesel` and similarly,  2 `Bus` - `Electric` and `Diesel`
+
+#### UML Class Diagram (My approach)
+![[UML Class Diagram for Abstract Factory Design Pattern.png|950]]
+This approach does not violate OCP -
+- if a `Truck` needs to be created, we can simply implement `Vehicle`, then create a new `Electric Truck Factory` and `Diesel Truck Factory`
+- if a new family of vehicles `CNG` needs to be added, we can add a new interface `CNG Factory` and have create it's sub-classes

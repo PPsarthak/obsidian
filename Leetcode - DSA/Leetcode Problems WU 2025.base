@@ -1,0 +1,50 @@
+formulas:
+  Untitled: ""
+views:
+  - type: table
+    name: All Problems
+    filters:
+      and:
+        - file.tags.containsAny("Leetcode", "Problems")
+        - file.folder == "Leetcode - DSA/Leetcode Problems"
+    order:
+      - file.name
+      - Difficulty
+      - Rating
+      - file.tags
+      - file.ctime
+      - topics
+    sort:
+      - property: file.ctime
+        direction: ASC
+      - property: file.name
+        direction: ASC
+      - property: formula.Untitled
+        direction: ASC
+    columnSize:
+      note.Difficulty: 79
+      note.Rating: 69
+      note.topics: 118
+      file.ctime: 154
+  - type: table
+    name: Arrays Problems
+    filters:
+      and:
+        - file.tags.containsAll("Leetcode", "Problems", "Arrays")
+        - file.folder == "Leetcode - DSA/Leetcode Problems"
+    order:
+      - file.name
+      - Difficulty
+      - Problem Number
+      - Rating
+      - file.ctime
+    sort:
+      - property: file.ctime
+        direction: ASC
+      - property: file.name
+        direction: ASC
+      - property: Difficulty
+        direction: ASC
+    columnSize:
+      note.Difficulty: 122
+      note.Rating: 181

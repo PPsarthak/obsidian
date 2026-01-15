@@ -1,0 +1,115 @@
+
+LLD Topics 🔥 🔥 :
+
+---
+- [x] S.O.L.I.D Principles
+- [x] <mark style="background: #FF6699;">Strategy Pattern</mark>
+- [x] <mark style="background: #FF6699;">Observer Pattern</mark>
+- [x] <mark style="background: #33EE99;">Design Notify-Me Button Functionality</mark>
+- [x] <mark style="background: #FF6699;">Decorator Pattern</mark>
+- [x] <mark style="background: #33EE99;">Design Pizza Billing System</mark>
+- [x] <mark style="background: #FF6699;">Factory Pattern</mark>
+- [ ] <mark style="background: #33EE99;">Design Parking Lot</mark>
+- [x] <mark style="background: #FF6699;">Abstract Factory Pattern</mark>
+- [ ] <mark style="background: #33EE99;">Design Snake n Ladder game</mark>
+- [x] <mark style="background: #FF6699;">Chain of Responsibility Pattern</mark>
+- [ ] <mark style="background: #33EE99;">Design Elevator System</mark>
+- [x] <mark style="background: #FF6699;">Proxy Pattern</mark>
+- [ ] <mark style="background: #33EE99;">Design Car Rental System</mark>
+- [x] <mark style="background: #FF6699;">Null Object Pattern</mark>
+- [ ] <mark style="background: #33EE99;">Design Logging System</mark>
+- [x] <mark style="background: #FF6699;">State Pattern</mark>
+- [ ] <mark style="background: #33EE99;">Design Tic-Tac-Toe game</mark>
+- [x] <mark style="background: #FF6699;">Composite Pattern</mark>
+- [ ] <mark style="background: #33EE99;">Design BookMyShow & Concurrency handling</mark>
+- [x] <mark style="background: #FF6699;">Adapter Pattern</mark>
+- [x] <mark style="background: #33EE99;">Design Vending Machine</mark>
+- [x] <mark style="background: #FF6699;">Singleton Pattern</mark>
+- [ ] <mark style="background: #33EE99;">Design ATM</mark>
+- [x] <mark style="background: #FF6699;">Builder Pattern</mark>
+- [ ] <mark style="background: #33EE99;">Design Chess game</mark>
+- [x] <mark style="background: #FF6699;">Prototype Pattern</mark>
+- [ ] Design File System
+- [ ] <mark style="background: #FF6699;">Bridge Pattern</mark>
+- [ ] Design Splitwise
+- [ ] <mark style="background: #FF6699;">Façade Pattern</mark>
+- [ ] Splitwise Simplify Algorithm / Optimal Accounting Balancing 
+- [ ] <mark style="background: #FF6699;">Flyweight Pattern</mark>
+- [ ] Design CricBuzz / CricketInfo
+- [ ] <mark style="background: #FF6699;">Command Pattern</mark>
+- [ ] Design True Caller
+- [ ] <mark style="background: #FF6699;">Interpreter Pattern</mark>
+- [ ] Design Car Booking Service like Ola, Uber
+- [ ] <mark style="background: #FF6699;">Iterator Pattern</mark>
+- [ ] Design Online Hotel Booking System
+- [ ] Mediator Pattern
+- [ ] Design Library Management System
+- [ ] Memento Pattern
+- [ ] Design  Traffic Light System
+- [ ] Template Method Pattern
+- [ ] Design Meeting Scheduler 
+- [ ] Visitor Pattern
+- [ ] Design Online Voting System
+- [ ] Design Inventory Management System
+- [ ] Design Cache Mechanism
+- [ ] Design LinkedIn 
+- [ ] Design Amazon 
+- [ ] Design Airline Management System 
+- [ ] Design Stock Exchange System
+- [ ] Design Learning Management System
+- [ ] Design a Calendar Application
+- [ ] Design (LLD) Payment System
+- [ ] Design (LLD) Chat based system
+- [ ] Design Food delivery app like Swiggy and Zomato
+- [ ] Design Community Discussion Platform
+- [ ] Design Restaurant Management System
+- [ ] Design Bowling Alley Machine 
+- [ ] Design (LLD) Rate Limiter
+
+- [ ] HLD topics 🔥 🔥 :
+
+- [ ] -----------------------------
+- [ ] Learn About Network Protocols (TCP, Websocket, HTTP etc.)
+- [ ] Client-Server Vs Peer 2 Peer Architecture
+- [ ] C.A.P Theorem
+- [ ] Microservices Imp. Design Patterns (SAGA pattern, Strangler Pattern)
+- [ ] Scale from 0 to Million Users
+- [ ] Design Consistent Hashing
+- [ ] Design URL Shortening
+- [ ] Back of the Envelope Estimation
+- [ ] Design Key-Value Store
+- [ ] SQL vs NoSQL, When to Use Which DB
+- [ ] Design WhatsApp
+- [ ] Design Rate Limiter
+- [ ] Design Search Autocomplete System / Typeahead System
+- [ ] Understand Message Queue , Kafka etc.
+- [ ] What is Proxy Servers
+- [ ] What is CDN
+- [ ] Storage types: 
+- [ ] (Block Storage, File Storage, Object Storage (S3) , RAID)
+- [ ] File System 
+- [ ] (Google File System, HDFS)
+- [ ] Bloom Filter
+- [ ] Merkle Tree , Gossiping Protocol
+- [ ] Caching
+- [ ] (Cache Invalidation, Cache eviction)
+- [ ] How to Scale Database
+- [ ] Sharding (Horizontal and Vertical)
+- [ ] Partitioning
+- [ ] Replication, Mirroring
+- [ ] Leader Election
+- [ ] Indexing etc.
+- [ ] Design Notification System
+- [ ] Design Pastebin
+- [ ] Design Twitter
+- [ ] Design Dropbox
+- [ ] Design Instagram
+- [ ] Design YouTube
+- [ ] Design Google Drive
+- [ ] Design Web Crawler
+- [ ] Design Facebook News Feed / Newsfeed System 
+- [ ] Design Ticket Master
+- [ ] Design NearByFriends or Yelp
+
+---
+Next logical step: Circuit Breaker + Retry ordering, or API Gateway–level Circuit Breaker (very interview-relevant).

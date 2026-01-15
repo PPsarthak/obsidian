@@ -1,0 +1,126 @@
+#system-design-v2 #design-patterns #structural-design-pattern 
+
+## Glossary
+- Used to add new behavior or responsibilities to an object dynamically, without modifying its existing code or affecting other objects of the same class.
+- At a conceptual level, it solves the problem of feature explosion (class explosion) through inheritance by favoring composition over inheritance.
+
+> Think of Decorator as a transparent <mark style="background: #19B5FF;">wrapper</mark>: each layer adds responsibility while passing control forward.
+##### Terminologies
+- **Component**: A common interface or abstract class defining core behavior.
+- **Concrete Component**: The base implementation of the component.
+- **Decorator**: An abstract wrapper that implements the same interface as the component and holds a reference to another component.
+- **Concrete Decorator**: Adds or alters behavior before or after delegating calls to the wrapped component
+
+![[Decorator Pattern Pizza Example.png|400]]
+
+Here the Base Pizza (Margherita) is the concrete component and Cheese, Mushroom, Paneer are the concrete decorator
+
+#### Key Traits
+- Open/Closed Principle: New behavior is added via new decorators, not by changing existing classes.
+- Runtime flexibility: Behavior can be added or removed dynamically.
+- Fine-grained customization: Different combinations of decorators create different behaviors without class explosion.
+- Transparent usage: Clients treat decorated objects the same as core objects
+### Typical Use Cases
+- Adding optional features or modifiers (logging, caching, validation).
+- Cross-cutting concerns without frameworks (security checks, metrics).
+- Extending legacy classes when modification is not allowed.
+- Replacing large inheritance hierarchies with composable behavior.
+- When subclassing would lead to many combinations.
+- When features should be combinable and order-sensitive.
+- When behavior must be attachable at runtime.
+#### Without Decorator Pattern
+You will need to create a common interface and multiple classes - all possible combinations of pizza
+This is called as *class explosion*
+
+![[Without Decorator Pattern.png|550]]
+#### How it works
+> <mark style="background: #FF6699; color: #000">Each decorator is a component. Each decorator contains a component - This allows stacking multiple decorators in any order at runtime</mark>
+
+![[UML Class Diagram for Decorator Design Pattern.png|950]]
+
+```JAVA
+interface Pizza {
+	String getDescription();
+	double getCost();
+}
+
+class Margherita implements Pizza {
+	String getDescription() {
+		return "Margherita Pizza";
+	}
+ 
+	double getCost() {
+		 return 120;
+	}
+}
+
+class Farmhouse implements Pizza {
+	String getDescription() {
+		return "Farmhouse Pizza";
+	}
+ 
+	double getCost() {
+		 return 150;
+	}
+}
+
+interface Toppings extends Pizza {
+	Pizza pizza;
+}
+
+class CheesePizza implements Toppings {
+	CheesePizza(Pizza pizza){
+		this.pizza = pizza;
+	}
+	String getDescription() {
+		return pizza.getDescription() + " + Extra Cheese";
+	}
+	
+	double getCost() {
+		return pizza.getCost() + 20;
+	}
+}
+
+class PannerPizza implements Toppings {
+	PannerPizza(Pizza pizza){
+		this.pizza = pizza;
+	}
+	String getDescription() {
+		return pizza.getDescription() + " + Extra Paneer";
+	}
+	
+	double getCost() {
+		return pizza.getCost() + 40;
+	}
+}
+
+class MushroomPizza implements Toppings {
+	MushroomPizza(Pizza pizza){
+		this.pizza = pizza;
+	}
+	String getDescription() {
+		return pizza.getDescription() + " + Extra Mushroom";
+	}
+	
+	double getCost() {
+		return pizza.getCost() + 30;
+	}
+}
+
+
+public static void main(String[] args){
+	Pizza pizza1 = new Margherita();
+	System.out.println(pizza1.getDescription() + pizza1.getCost()); //"Margherita Pizza" 120
+	
+	Pizza pizza2 = new Farmhouse();
+	System.out.println(pizza2.getDescription() + pizza2.getCost()); //"Farmhouse Pizza" 150
+	
+	
+	Pizza pizza3 = new CheesePizza(new Farmhouse());
+	System.out.println(pizza3.getDescription() + pizza3.getCost()); //"Farmhouse Pizza + Extra Cheese" 170
+	
+	Pizza pizza4 = new PannerPizza(new CheesePizza(new Farmhouse()));
+	System.out.println(pizza4.getDescription() + pizza4.getCost()); //"Farmhouse Pizza + Extra Cheese + Extra Paneer" 210
+}
+```
+

@@ -1,0 +1,72 @@
+{
+  "settings": {
+    "migrated": 6,
+    "iconPacksPath": ".obsidian/icons",
+    "fontSize": 16,
+    "emojiStyle": "native",
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "LiPuzzle",
+      "💸",
+      "🐧",
+      "LiCalendarFold",
+      "LiImages"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": false,
+    "iconInTitleEnabled": false,
+    "iconInTitlePosition": "above",
+    "iconInFrontmatterEnabled": false,
+    "iconInFrontmatterFieldName": "icon",
+    "iconColorInFrontmatterFieldName": "iconColor",
+    "iconsBackgroundCheckEnabled": false,
+    "iconsInNotesEnabled": true,
+    "iconsInLinksEnabled": true,
+    "iconIdentifier": ":",
+    "lucideIconPackType": "native",
+    "debugMode": false
+  },
+  "Database Management Systems.md": {
+    "iconName": "LiDatabase",
+    "iconColor": "#12cefd"
+  },
+  "GIT.md": "LiGithub",
+  "Ice Box.md": "🧊",
+  "Spring Boot.md": "LiLeaf",
+  "System Design": {
+    "iconName": "LiComputer",
+    "iconColor": "#e16060"
+  },
+  "Object Oriented Programming.md": {
+    "iconName": "LiSnapToObject",
+    "iconColor": "#d45ebe"
+  },
+  "New Action Plan.md": "LiWorkflow",
+  "Docker.md": "🐋",
+  "OAuth2.md": {
+    "iconName": "LiLockKeyhole",
+    "iconColor": "#56d7a6"
+  },
+  "Operating Systems.md": {
+    "iconName": "LiComputer",
+    "iconColor": "#db9e48"
+  },
+  "_Images": "LiImages",
+  "__Daily Notes": "LiCalendarFold",
+  "Linux.md": "🐧",
+  "Placement Preparation 101": "LiPuzzle",
+  "Leetcode - DSA": {
+    "iconName": "LiCode",
+    "iconColor": "#cc7ff5"
+  },
+  "Leetcode - DSA/Bitwise Operators.md": "LiBinary",
+  "Leetcode - DSA/Old Leetcode Notes/Neetcode 150 Roadmap.md": "LiCode",
+  "Leetcode - DSA/Linked List/Linked List - Neetcode 250.md": "↩"
+}

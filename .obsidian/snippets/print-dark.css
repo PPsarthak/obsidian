@@ -1,0 +1,95 @@
+@media print {
+
+  /* ---------- Base colors & font ---------- */
+  html, body {
+    background-color: #1e1e2e !important;
+    color: #cdd6f4 !important;
+
+    font-family: "Playfair Display", serif !important;
+    font-weight: 600;
+
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+
+  /* Remove Obsidian UI leftovers */
+  .nav-files-container,
+  .workspace-ribbon,
+  .status-bar,
+  .inline-title-icon {
+    display: none !important;
+  }
+
+  /* ---------- Reading view ---------- */
+  .markdown-preview-view,
+  .markdown-reading-view {
+    background-color: #1e1e2e !important;
+    color: #cdd6f4 !important;
+  }
+
+  /* ---------- Headings ---------- */
+  h1 { color: #9164DD; }
+  h2 { color: #3d99ea; }
+  h3 { color: #ffbc05; }
+  h4 { color: #20a4b0; }
+  h5 { color: #e2891a; }
+  h6 { color: #c71919; }
+
+  h1, h2, h3 {
+    border-bottom: 1px solid #6c7086;
+    padding-bottom: 4px;
+  }
+
+  /* ---------- Note title ---------- */
+  .inline-title {
+    border-bottom: 1px solid #6c7086;
+    padding-bottom: 4px;
+    margin-bottom: 1em;
+  }
+
+  /* ---------- Text formatting ---------- */
+  strong {
+    color: #ee52a8;
+  }
+
+  em {
+    color: #3ac012;
+  }
+
+  mark {
+    background-color: #746119;
+    color: #ffffff;
+    padding: 0 6px;
+    border-radius: 8px;
+  }
+
+  /* ---------- Lists ---------- */
+  ul, ol {
+    color: #cdd6f4;
+  }
+
+  /* ---------- Code blocks ---------- */
+  pre, code {
+    background-color: #181825 !important;
+    color: #cdd6f4 !important;
+    border-radius: 6px;
+  }
+
+  /* ---------- Links ---------- */
+  a {
+    color: #89b4fa;
+    text-decoration: underline;
+  }
+
+  /* ---------- Mermaid ---------- */
+  .mermaid {
+    background-color: #1e1e2e !important;
+  }
+
+  /* ---------- Page setup ---------- */
+  @page {
+    margin: 20mm;
+    background: #1e1e2e;
+  }
+}
