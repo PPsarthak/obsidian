@@ -39,7 +39,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "System Design/Design Pattern/10. Composite Design Pattern.md",
+                "file": "Placement Preparation 101/API - Application Programming Interface.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -54,7 +54,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "10. Composite Design Pattern"
+              "title": "API - Application Programming Interface"
             }
           }
         ],
@@ -191,13 +191,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "System Design/Design Pattern/10. Composite Design Pattern.md",
+                "file": "Placement Preparation 101/API - Application Programming Interface.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 10. Composite Design Pattern"
+              "title": "Outline of API - Application Programming Interface"
             }
           },
           {
@@ -270,8 +270,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "62a86eea7e43e98d",
+  "active": "32cc79dd8c5bdf36",
   "lastOpenFiles": [
+    "Placement Preparation 101/C Notes.md",
+    "Placement Preparation 101/API - Application Programming Interface.md",
+    "Placement Preparation 101/_Placement Preparation.md",
+    "Placement Preparation 101/10 Helpful Code Snippets Every Spring Boot Project Should Have.md",
+    "System Design/Design Pattern/10. Composite Design Pattern.md",
     "System Design/Design Pattern/14. Bridge Design Pattern.md",
     "System Design/Design Pattern/13. Facade Design Pattern.md",
     "System Design/Design Pattern/16. Command Design Pattern.md",
@@ -298,11 +303,6 @@
     "Placement Preparation 101/Java Memory Management.md",
     "Placement Preparation 101/Creational Design Patterns in Java.md",
     "__Daily Notes/31-07-25.md",
-    "__Daily Notes/30-12-24.md",
-    "__Daily Notes/29-07-25.md",
-    "__Daily Notes/28-12-24.md",
-    "__Daily Notes/27-09-25.md",
-    "__Daily Notes/27-01-25.md",
     "UML Class Diagram for Bridge Design Pattern.png",
     "UML Class Diagram for Vending Machine.png",
     "_Images/UML Class Diagram for Composite Design Pattern.png",
